@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let peso = Number(prompt("Digite seu peso: "));
+        let altura = Number(prompt("Digite sua altura: "));
+
+        let imc = peso / (altura * altura);
+
+        if (imc < 18.5){
+            console.log("IMC: " + imc);
+            console.log("Abaixo do peso (magreza).");
+        
+        }else if(imc >= 18.5 && imc < 25){
+            console.log("IMC: " + imc);
+            console.log("Peso nomrmal (adequado ou eutrofia).");
+
+        }else if(imc >= 25 && imc < 30){
+            console.log("IMC: " + imc);
+            console.log("Sobrepeso (excesso de peso ou pré-obeso).");
+
+        }else if(imc >= 30 && imc < 35){
+            console.log("IMC: " + imc);
+            console.log("Obesidade Classe I (leve).");
+
+        }else if(imc >= 35 && imc < 40){
+            console.log("IMC: " + imc);
+            console.log("Obesidade Classe II (severa).");
+
+        }else{
+            console.log("IMC: " + imc);
+            console.log("Obesidade Classe III (mórbida).");
+
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
